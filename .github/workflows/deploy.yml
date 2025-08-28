@@ -1,12 +1,10 @@
 name: Deploy to GitHub Pages
 
 on:
-  push:
-    branches:
-      - main
   pull_request:
     branches:
       - main
+    types: [opened, synchronize, closed]
 
 permissions:
   contents: read
@@ -18,6 +16,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  # Build job runs on PR open/update for testing
   build:
     runs-on: ubuntu-latest
     steps:
@@ -41,7 +40,9 @@ jobs:
         with:
           path: ./build
 
+  # Deploy job only runs when PR is merged
   deploy:
+    if: github.event.pull_request.merged == true
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
