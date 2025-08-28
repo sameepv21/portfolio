@@ -9,42 +9,15 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/b
 export default function Resume() {
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
-  const [showCoverLetter, setShowCoverLetter] = useState(false);
 
   const onDocumentLoadSuccess = ({ numPages }) => {
     setNumPages(numPages);
     setPageNumber(1);
   };
 
-  const currentFile = showCoverLetter ? '/files/Cover Letter.pdf' : '/files/Sameep_Vani_Resume.pdf';
-
   return (
     <div className="py-12">
-      <h2 className="text-3xl font-bold text-gray-900 mb-8">Resume & Cover Letter</h2>
-      
-      {/* Document Selector */}
-      <div className="flex space-x-4 mb-6">
-        <button
-          onClick={() => {setShowCoverLetter(false); setPageNumber(1);}}
-          className={`px-4 py-2 rounded-lg font-medium ${
-            !showCoverLetter 
-              ? 'bg-indigo-600 text-white' 
-              : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
-          }`}
-        >
-          Resume
-        </button>
-        <button
-          onClick={() => {setShowCoverLetter(true); setPageNumber(1);}}
-          className={`px-4 py-2 rounded-lg font-medium ${
-            showCoverLetter 
-              ? 'bg-indigo-600 text-white' 
-              : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
-          }`}
-        >
-          Cover Letter
-        </button>
-      </div>
+      <h2 className="text-3xl font-bold text-gray-900 mb-8">Resume</h2>
 
       {/* PDF Viewer Container */}
       <div className="bg-gray-50 rounded-lg p-4">
@@ -68,7 +41,7 @@ export default function Resume() {
               Next
             </button>
             <a
-              href={currentFile}
+              href="/files/Sameep_Vani_Resume.pdf"
               download
               className="px-3 py-1 bg-indigo-600 text-white rounded hover:bg-indigo-700"
             >
@@ -79,7 +52,7 @@ export default function Resume() {
 
         <div className="flex justify-center overflow-auto" style={{ maxHeight: '800px' }}>
           <Document
-            file={currentFile}
+            file="/files/Sameep_Vani_Resume.pdf"
             onLoadSuccess={onDocumentLoadSuccess}
             loading={<div className="text-gray-500">Loading PDF...</div>}
             error={<div className="text-red-500">Failed to load PDF</div>}
