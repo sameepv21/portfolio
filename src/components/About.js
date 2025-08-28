@@ -5,9 +5,13 @@ export default function About() {
         {/* Profile Section */}
         <div className="md:col-span-1">
           <div className="text-center">
-            {/* Photo Placeholder */}
-            <div className="w-48 h-48 mx-auto bg-gray-200 rounded-full mb-4 flex items-center justify-center">
-              <span className="text-gray-500">Photo</span>
+            {/* Profile Photo */}
+            <div className="w-48 h-48 mx-auto bg-gray-200 rounded-full mb-4 overflow-hidden">
+              <img 
+                src="/images/profile.jpeg" 
+                alt="Sameep Vani" 
+                className="w-full h-full object-cover"
+              />
             </div>
             <h2 className="text-2xl font-bold text-gray-900 mb-2">Sameep Vani</h2>
             <p className="text-gray-600 mb-4">Software Engineer</p>
@@ -18,19 +22,19 @@ export default function About() {
                 <span className="font-medium">Email:</span> svani@asu.edu
               </p>
               <p className="text-sm text-gray-600 mb-2">
-                <span className="font-medium">Location:</span> Arizona, USA
+                <span className="font-medium">Location:</span> San Francisco, California
               </p>
             </div>
 
             {/* Social Links */}
             <div className="flex justify-center space-x-4 mt-6">
-              <a href="https://github.com" className="text-gray-400 hover:text-gray-600">
+              <a href="https://github.com/sameepv21" className="text-gray-400 hover:text-gray-600">
                 <span className="sr-only">GitHub</span>
                 <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
                   <path fillRule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clipRule="evenodd" />
                 </svg>
               </a>
-              <a href="https://linkedin.com" className="text-gray-400 hover:text-gray-600">
+              <a href="https://linkedin.com/in/sameep-vani" className="text-gray-400 hover:text-gray-600">
                 <span className="sr-only">LinkedIn</span>
                 <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
@@ -45,15 +49,19 @@ export default function About() {
           <div className="prose max-w-none">
             <h3 className="text-xl font-semibold mb-4">About Me</h3>
             <p className="text-gray-700 mb-4">
-              I am a passionate software engineer with expertise in full-stack development, 
-              machine learning, and cloud technologies. Currently pursuing my degree at 
-              Arizona State University, I am focused on building innovative solutions that 
-              make a difference.
+              I am a Master's student in Computer Science at Arizona State University with a strong focus on 
+              Artificial Intelligence and Machine Learning, particularly in computer vision, natural language 
+              processing, and video large language models. Alongside research, I have gained hands-on experience 
+              as a Founding AI Engineer at a YC-backed startup, where I built agentic systems, backend 
+              infrastructure, and end-to-end AI pipelines that delivered measurable business impact. My work 
+              blends deep learning research with robust software engineering designing scalable APIs, integrating 
+              production-ready pipelines, and fine-tuning models to solve complex, real-world problems.
             </p>
             <p className="text-gray-700 mb-4">
-              My experience spans across various domains including web development, 
-              data science, and system design. I enjoy solving complex problems and 
-              continuously learning new technologies to stay at the forefront of the field.
+              Outside of work and research, I enjoy exploring new coffee spots, trying out unique ice cream flavors, 
+              and discovering local food experiences. I am equally passionate about building strong connections with 
+              people as I am about building intelligent systems, and I find inspiration in both everyday curiosity 
+              and collaborative problem-solving.
             </p>
             
             <h3 className="text-xl font-semibold mb-4 mt-8">Skills</h3>
@@ -68,8 +76,13 @@ export default function About() {
             <h3 className="text-xl font-semibold mb-4 mt-8">Education</h3>
             <div className="bg-gray-50 rounded-lg p-4">
               <h4 className="font-semibold">Arizona State University</h4>
-              <p className="text-gray-600">Bachelor of Science in Computer Science</p>
-              <p className="text-sm text-gray-500">Expected Graduation: 2025</p>
+              <p className="text-gray-600">Masters of Science in Computer Science</p>
+              <p className="text-sm text-gray-500">Expected Graduation: 12/2025</p>
+            </div>
+            <div className="bg-gray-50 rounded-lg p-4">
+              <h4 className="font-semibold">Ahmedabad University</h4>
+              <p className="text-gray-600">Bachelor of Technology in Computer Science</p>
+              <p className="text-sm text-gray-500">Graduated: 06/2023</p>
             </div>
           </div>
         </div>
