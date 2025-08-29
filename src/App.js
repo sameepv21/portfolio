@@ -1,4 +1,5 @@
 import About from './components/About';
+import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Resume from './components/Resume';
 import Contact from './components/Contact';
@@ -6,18 +7,10 @@ import Contact from './components/Contact';
 export default function App() {
   return (
     <div className="min-h-screen bg-white">
-      {/* Header */}
-      <header className="bg-white border-b">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-center h-16 items-center">
-            <h1 className="text-2xl font-semibold text-gray-900">Sameep Vani</h1>
-          </div>
-        </div>
-      </header>
-
       {/* Main Content - All Sections */}
-      <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
         <About />
+        <Experience />
         <Projects />
         <Resume />
         <Contact />

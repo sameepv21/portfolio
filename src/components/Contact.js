@@ -18,7 +18,7 @@ export default function Contact() {
               </svg>
               <div>
                 <p className="font-medium">Email</p>
-                <a href="mailto:svani@asu.edu" className="text-indigo-600 hover:text-indigo-800">
+                <a href="mailto:svani@asu.edu" className="text-gray-900 hover:text-gray-700">
                   svani@asu.edu
                 </a>
               </div>
@@ -64,7 +64,7 @@ export default function Contact() {
               </label>
               <input
                 type="text"
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-900"
                 placeholder="Your Name"
               />
             </div>
@@ -74,7 +74,7 @@ export default function Contact() {
               </label>
               <input
                 type="email"
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-900"
                 placeholder="your.email@example.com"
               />
             </div>
@@ -84,13 +84,13 @@ export default function Contact() {
               </label>
               <textarea
                 rows={4}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-gray-900"
                 placeholder="Your message..."
               />
             </div>
             <button
               type="submit"
-              className="w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 transition duration-200"
+              className="w-full bg-gray-900 text-white py-2 px-4 rounded-md hover:bg-gray-800 transition duration-200"
             >
               Send Message
             </button>

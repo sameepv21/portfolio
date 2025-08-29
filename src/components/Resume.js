@@ -43,7 +43,7 @@ export default function Resume() {
             <a
               href="/files/Sameep_Vani_Resume.pdf"
               download
-              className="px-3 py-1 bg-indigo-600 text-white rounded hover:bg-indigo-700"
+              className="px-3 py-1 bg-gray-900 text-white rounded hover:bg-gray-800"
             >
               Download
             </a>

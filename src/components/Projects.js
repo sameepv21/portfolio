@@ -36,12 +36,12 @@ export default function Projects() {
             <p className="text-gray-600 mb-4">{project.description}</p>
             <div className="flex flex-wrap gap-2 mb-4">
               {project.technologies.map((tech) => (
-                <span key={tech} className="px-2 py-1 bg-indigo-100 text-indigo-700 rounded text-sm">
+                <span key={tech} className="px-2 py-1 bg-gray-100 text-gray-700 rounded text-sm">
                   {tech}
                 </span>
               ))}
             </div>
-            <a href={project.link} className="text-indigo-600 hover:text-indigo-800 font-medium">
+            <a href={project.link} className="text-gray-900 hover:text-gray-700 font-medium">
               View Project →
             </a>
           </div>
