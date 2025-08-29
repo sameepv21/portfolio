@@ -27,7 +27,7 @@ export default function Projects() {
   ];
 
   return (
-    <div className="py-12">
+    <div className="py-12 md:pl-16">
       <h2 className="text-3xl font-bold text-gray-900 mb-8">Projects</h2>
       <div className="grid md:grid-cols-2 gap-6">
         {projects.map((project, index) => (
@@ -36,12 +36,12 @@ export default function Projects() {
             <p className="text-gray-600 mb-4">{project.description}</p>
             <div className="flex flex-wrap gap-2 mb-4">
               {project.technologies.map((tech) => (
-                <span key={tech} className="px-2 py-1 bg-indigo-100 text-indigo-700 rounded text-sm">
+                <span key={tech} className="px-3 py-1 bg-gray-100 text-gray-700 hover:bg-gray-900 hover:text-white rounded-md text-sm transition-colors cursor-pointer">
                   {tech}
                 </span>
               ))}
             </div>
-            <a href={project.link} className="text-indigo-600 hover:text-indigo-800 font-medium">
+            <a href={project.link} className="text-gray-900 hover:text-gray-700 font-medium">
               View Project →
             </a>
           </div>
