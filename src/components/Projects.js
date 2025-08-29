@@ -1,9 +1,9 @@
 export default function Projects() {
   const projects = [
     {
-      title: 'E-Commerce Platform',
-      description: 'Full-stack web application with React and Node.js',
-      technologies: ['React', 'Node.js', 'MongoDB', 'AWS'],
+      title: 'Video-Guided Instruction Retrieval and Answering',
+      description: 'Efficient and high-quality RAG system that leverages pre-trained video-focused models',
+      technologies: ["PyTorch", "Hugging Face Transformers", "LangGraph", "LangChain", "Vector Database", "Django"],
       link: '#'
     },
     {

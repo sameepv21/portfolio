@@ -26,7 +26,7 @@ export default function Resume() {
             Page {pageNumber} of {numPages || '...'}
           </p>
           <div className="flex space-x-2">
-            <button
+            {/* <button
               onClick={() => setPageNumber(Math.max(1, pageNumber - 1))}
               disabled={pageNumber <= 1}
               className="px-3 py-1 bg-white rounded border hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
@@ -39,7 +39,7 @@ export default function Resume() {
               className="px-3 py-1 bg-white rounded border hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               Next
-            </button>
+            </button> */}
             <a
               href="/files/Sameep_Vani_Resume.pdf"
               download
