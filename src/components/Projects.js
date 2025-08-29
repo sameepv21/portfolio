@@ -27,7 +27,7 @@ export default function Projects() {
   ];
 
   return (
-    <div className="py-12">
+    <div className="py-12 md:pl-16">
       <h2 className="text-3xl font-bold text-gray-900 mb-8">Projects</h2>
       <div className="grid md:grid-cols-2 gap-6">
         {projects.map((project, index) => (

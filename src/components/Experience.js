@@ -7,10 +7,10 @@ export default function Experience() {
   ];
 
   return (
-    <div className="py-12">
+    <div className="py-12 md:pl-16">
       <h2 className="text-3xl font-bold text-gray-900 mb-8">Experience</h2>
-      <div className="relative px-8">
-        <div className="absolute left-8 right-8 top-3 h-0.5 bg-gray-300"></div>
+      <div className="relative">
+        <div className="absolute left-0 right-0 top-3 h-0.5 bg-gray-300"></div>
         <div className="relative flex justify-between">
           {experiences.map((exp, index) => (
             <div key={index} className="flex flex-col items-center">

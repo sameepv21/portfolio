@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <div className="py-12">
+    <div className="py-12 md:pl-16">
       <h2 className="text-3xl font-bold text-gray-900 mb-8">Contact</h2>
       
       <div className="grid md:grid-cols-2 gap-8">
