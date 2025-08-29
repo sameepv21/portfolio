@@ -1,8 +1,9 @@
 export default function Experience() {
   const experiences = [
-    { date: 'Aug 2025', title: 'Founding AI Engineer', company: 'Sphinx Labs (YC F24)' },
-    { date: 'Jan 2022', title: 'Junior Developer', company: 'Tech Startup' },
-    { date: 'Sep 2021', title: 'Intern', company: 'Software Inc' }
+    { date: 'Aug 2025 - Present', title: 'Founding AI Engineer', company: 'Sphinx (YC F24)' },
+    { date: 'May 2024 - May 2025', title: 'ML Research Engineer', company: 'Arizona State University' },
+    { date: 'Jan 2023 - May 2023', title: 'Machine Learning Intern', company: 'Sculptsoft Private Ltd.' },
+    { date: 'Oct 2020 - Sep 2022', title: 'Software Engineer / Tech Team Lead', company: 'Stepwell Radio' }
   ];
 
   return (
