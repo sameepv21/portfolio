@@ -86,17 +86,7 @@ export default function About() {
               </a>
             </div>
 
-            <h3 className="text-xl font-semibold mb-4 mt-8">Education</h3>
-            <div className="bg-gray-50 rounded-lg p-4">
-              <h4 className="font-semibold">Arizona State University</h4>
-              <p className="text-gray-600">Masters of Science in Computer Science</p>
-              <p className="text-sm text-gray-500">Expected Graduation: 12/2025</p>
-            </div>
-            <div className="bg-gray-50 rounded-lg p-4">
-              <h4 className="font-semibold">Ahmedabad University</h4>
-              <p className="text-gray-600">Bachelor of Technology in Computer Science</p>
-              <p className="text-sm text-gray-500">Graduated: 06/2023</p>
-            </div>
+
           </div>
         </div>
       </div>
