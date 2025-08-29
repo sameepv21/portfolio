@@ -79,7 +79,7 @@ export default function About() {
             <h3 className="text-xl font-semibold mb-4 mt-8">Skills</h3>
             <div className="flex flex-wrap gap-2">
               {['Python', 'JavaScript', 'React', 'Node.js', 'Machine Learning', 'AWS', 'Docker', 'Django', 'PyTorch', 'TensorFlow'].map((skill) => (
-                <span key={skill} className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">
+                <span key={skill} className="px-3 py-1 bg-gray-100 text-gray-700 hover:bg-gray-900 hover:text-white rounded-md text-sm transition-colors cursor-pointer">
                   {skill}
                 </span>
               ))}

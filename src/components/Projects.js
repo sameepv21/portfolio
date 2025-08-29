@@ -36,7 +36,7 @@ export default function Projects() {
             <p className="text-gray-600 mb-4">{project.description}</p>
             <div className="flex flex-wrap gap-2 mb-4">
               {project.technologies.map((tech) => (
-                <span key={tech} className="px-2 py-1 bg-gray-100 text-gray-700 rounded text-sm">
+                <span key={tech} className="px-3 py-1 bg-gray-100 text-gray-700 hover:bg-gray-900 hover:text-white rounded-md text-sm transition-colors cursor-pointer">
                   {tech}
                 </span>
               ))}
