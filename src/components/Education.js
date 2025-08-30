@@ -4,15 +4,15 @@ export default function Education() {
       university: 'Arizona State University',
       degree: 'Masters of Science in Computer Science',
       graduation: 'Expected Graduation: 12/2025',
-      gpa: 'GPA: 4.0/4.0',
-      focusAreas: ['Machine Learning', 'Computer Vision', 'Natural Language Processing']
+      gpa: 'GPA: 3.62/4.0',
+      focusAreas: ['Vision-Language', "Generative AI", "Retrieval-Augmented Generation"]
     },
     {
       university: 'Ahmedabad University',
       degree: 'Bachelor of Technology in Computer Science',
       graduation: 'Graduated: 06/2023',
-      gpa: 'GPA: 3.8/4.0',
-      focusAreas: ['Software Engineering', 'Data Structures', 'Algorithms']
+      gpa: 'GPA: 3.48/4.0',
+      focusAreas: ["Machine Learning", "Computer Vision", "Data Science"]
     }
   ];
 
