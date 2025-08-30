@@ -4,7 +4,10 @@ on:
   pull_request:
     branches:
       - main
-    types: [opened, synchronize, closed]
+    types: [opened, synchronize]
+  push:
+    branches:
+      - main
 
 permissions:
   contents: read
@@ -16,7 +19,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # Build job runs on PR open/update for testing
+  # Build job runs on PR for testing and on push to main
   build:
     runs-on: ubuntu-latest
     steps:
@@ -36,13 +39,15 @@ jobs:
         run: npm run build
 
       - name: Upload artifact
+        # Only upload artifact when pushing to main
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./build
 
-  # Deploy job only runs when PR is merged
+  # Deploy job only runs on push to main
   deploy:
-    if: github.event.pull_request.merged == true
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
