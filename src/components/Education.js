@@ -21,7 +21,7 @@ export default function Education() {
       <h2 className="text-3xl font-bold text-gray-900 mb-8">Education</h2>
       <div className="space-y-6">
         {education.map((edu, index) => (
-          <div key={index} className="bg-white border rounded-lg p-6">
+          <div key={index} className="border border-gray-200 hover:border-gray-400 rounded-lg p-6 transition-colors duration-300" style={{ backgroundColor: '#FFF9F2' }}>
             <h3 className="text-xl font-semibold text-gray-900">{edu.university}</h3>
             <p className="text-gray-700 mt-1">{edu.degree}</p>
             <div className="flex flex-wrap gap-4 mt-2 text-sm text-gray-600">
@@ -32,7 +32,7 @@ export default function Education() {
               <p className="text-sm font-medium text-gray-700 mb-2">Focus Areas:</p>
               <div className="flex flex-wrap gap-2">
                 {edu.focusAreas.map((area) => (
-                  <span key={area} className="px-3 py-1 bg-gray-100 text-gray-700 hover:bg-gray-900 hover:text-white rounded-md text-sm transition-colors cursor-pointer">
+                  <span key={area} className="px-3 py-1 bg-gray-100 text-gray-700 hover:bg-gray-900 hover:text-white rounded-md text-sm transition-colors duration-300 cursor-pointer">
                     {area}
                   </span>
                 ))}
