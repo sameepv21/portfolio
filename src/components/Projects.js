@@ -3,27 +3,27 @@ export default function Projects() {
     {
       title: 'Video-Guided Instruction Retrieval and Answering',
       description: 'Efficient and high-quality RAG system that leverages pre-trained video-focused models',
-      technologies: ["PyTorch", "Hugging Face Transformers", "LangGraph", "LangChain", "Vector Database", "Django"],
+      technologies: ["Hugging Face", "Transformers", "LangGraph", "LangChain", "Vector Database", "Django"],
       link: '#'
     },
     {
-      title: 'Machine Learning Pipeline',
-      description: 'Automated ML pipeline for predictive analytics',
-      technologies: ['Python', 'TensorFlow', 'Docker', 'Kubernetes'],
-      link: '#'
+      title: 'TimeWarp',
+      description: 'Harnessed synthetic preference data for improved event understanding in Video-LLMs',
+      technologies: ['DPO', 'Research', 'In-Context Learning', "Inference", "Fine-Tuning"],
+      link: 'https://github.com/sameepv21/TimeWarp'
     },
     {
-      title: 'Mobile App Development',
-      description: 'Cross-platform mobile application',
-      technologies: ['React Native', 'Firebase', 'Redux'],
-      link: '#'
+      title: 'Symbolic Regression via ODEFormer',
+      description: 'Transformers for symbolic regression in dynamical systems',
+      technologies: ['Neural ODEs', 'Physics Informed Neural Networks', 'Kolmogorov Arnold Networks'],
+      link: 'https://github.com/sameepv21/odeformer'
     },
     {
-      title: 'Data Visualization Dashboard',
-      description: 'Interactive dashboard for business intelligence',
-      technologies: ['D3.js', 'Python', 'PostgreSQL'],
-      link: '#'
-    }
+      title: 'Beyond Frames',
+      description: 'Scene graph-based video question-answering system for intelligent road traffic analysis',
+      technologies: ['Video Question Answering', 'Scene Graphs', 'Graph Neural Networks'],
+      link: 'https://github.com/sameepv21/Beyond_Frames'
+    },
   ];
 
   return (
