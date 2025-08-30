@@ -26,22 +26,23 @@ export default function Projects() {
     },
   ];
 
+  // Version 1: Two-column grid with fixed slots for consistent alignment
   return (
     <div className="py-12 md:pl-16">
       <h2 className="text-3xl font-bold text-gray-900 mb-8">Projects</h2>
       <div className="grid md:grid-cols-2 gap-6">
         {projects.map((project, index) => (
-          <div key={index} className="bg-white border rounded-lg p-6 hover:shadow-lg transition-shadow">
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">{project.title}</h3>
-            <p className="text-gray-600 mb-4">{project.description}</p>
-            <div className="flex flex-wrap gap-2 mb-4">
+          <div key={index} className="bg-white border rounded-lg p-6 hover:shadow-lg transition-shadow flex flex-col">
+            <h3 className="text-xl font-semibold text-gray-900 mb-2 line-clamp-2 h-14">{project.title}</h3>
+            <p className="text-gray-600 mb-4 line-clamp-2 h-12">{project.description}</p>
+            <div className="flex flex-wrap gap-2 mb-4 h-16 overflow-hidden">
               {project.technologies.map((tech) => (
-                <span key={tech} className="px-3 py-1 bg-gray-100 text-gray-700 hover:bg-gray-900 hover:text-white rounded-md text-sm transition-colors cursor-pointer">
+                <span key={tech} className="px-3 py-1 bg-gray-100 text-gray-700 hover:bg-gray-900 hover:text-white rounded-md text-sm transition-colors cursor-pointer h-fit">
                   {tech}
                 </span>
               ))}
             </div>
-            <a href={project.link} className="text-gray-900 hover:text-gray-700 font-medium">
+            <a href={project.link} className="text-gray-900 hover:text-gray-700 font-medium mt-auto">
               View Project →
             </a>
           </div>
@@ -49,4 +50,32 @@ export default function Projects() {
       </div>
     </div>
   );
+
+  // Version 2: Single column layout (similar to Education section)
+  // return (
+  //   <div className="py-12 md:pl-16">
+  //     <h2 className="text-3xl font-bold text-gray-900 mb-8">Projects</h2>
+  //     <div className="space-y-6">
+  //       {projects.map((project, index) => (
+  //         <div key={index} className="bg-white border rounded-lg p-6 hover:shadow-lg transition-shadow">
+  //           <h3 className="text-xl font-semibold text-gray-900">{project.title}</h3>
+  //           <p className="text-gray-600 mt-2">{project.description}</p>
+  //           <div className="mt-4">
+  //             <p className="text-sm font-medium text-gray-700 mb-2">Technologies:</p>
+  //             <div className="flex flex-wrap gap-2">
+  //               {project.technologies.map((tech) => (
+  //                 <span key={tech} className="px-3 py-1 bg-gray-100 text-gray-700 hover:bg-gray-900 hover:text-white rounded-md text-sm transition-colors cursor-pointer">
+  //                   {tech}
+  //                 </span>
+  //               ))}
+  //             </div>
+  //           </div>
+  //           <a href={project.link} className="inline-block mt-4 text-gray-900 hover:text-gray-700 font-medium">
+  //             View Project →
+  //           </a>
+  //         </div>
+  //       ))}
+  //     </div>
+  //   </div>
+  // );
 }
