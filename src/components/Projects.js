@@ -4,7 +4,7 @@ export default function Projects() {
       title: 'Video-Guided Instruction Retrieval and Answering',
       description: 'Efficient and high-quality RAG system that leverages pre-trained video-focused models',
       technologies: ["Hugging Face", "Transformers", "LangGraph", "LangChain", "Vector Database", "Django"],
-      link: '#'
+      link: 'Coming Soon...'
     },
     {
       title: 'TimeWarp',
