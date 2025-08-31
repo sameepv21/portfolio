@@ -4,7 +4,7 @@ export default function Projects() {
       title: 'Video-Guided Instruction Retrieval and Answering',
       description: 'Efficient and high-quality RAG system that leverages pre-trained video-focused models',
       technologies: ["Hugging Face", "Transformers", "LangGraph", "LangChain", "Vector Database", "Django"],
-      link: 'Coming Soon...'
+      link: '#'
     },
     {
       title: 'TimeWarp',
@@ -42,9 +42,15 @@ export default function Projects() {
                 </span>
               ))}
             </div>
-            <a href={project.link} className="text-gray-900 hover:text-gray-700 font-medium mt-auto">
-              View Project →
-            </a>
+            {project.link === '#' ? (
+              <span className="text-gray-500 font-medium">
+                Coming Soon
+              </span>
+            ) : (
+              <a href={project.link} className="text-gray-900 hover:text-gray-700 font-medium">
+                View Project →
+              </a>
+            )}
           </div>
         ))}
       </div>
